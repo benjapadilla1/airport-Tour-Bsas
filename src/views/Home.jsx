@@ -1,9 +1,7 @@
-import NavBar from "../components/NavBar/NavBar";
-
 const Home = () => {
   return (
-    <div>
-      <NavBar />
+    <div className="h-screen bg-gray-500">
+      <h1>Home</h1>
     </div>
   );
 };

@@ -3,11 +3,13 @@ import Home from "./views/Home";
 import Tours from "./views/Tours";
 import Contact from "./views/Contact";
 import Booking from "./views/Booking";
+import NavBar from "./components/NavBar/NavBar";
 
 export default function Router() {
   return (
     <>
       <Routes>
+        <Route path="*" element={<NavBar />} />
         <Route path="/" element={<Home />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/booking" element={<Booking />} />

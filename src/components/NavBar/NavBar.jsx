@@ -4,7 +4,7 @@ const NavBar = () => {
   return (
     <div className="mt-5">
       <ul className="flex flex-row justify-around ">
-        <Link to={"/home"}>
+        <Link to={"/"}>
           <li>Home</li>
         </Link>
         <Link to={"/tours"}>

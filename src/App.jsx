@@ -8,8 +8,8 @@ import NavBar from "./components/NavBar/NavBar";
 export default function Router() {
   return (
     <>
+      <NavBar />
       <Routes>
-        <Route path="*" element={<NavBar />} />
         <Route path="/" element={<Home />} />
         <Route path="/tours" element={<Tours />} />
         <Route path="/booking" element={<Booking />} />

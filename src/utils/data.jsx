@@ -24,3 +24,44 @@ export const hoursOfDay = [
   "11:00 PM",
   "12:00 AM",
 ];
+
+export const internationalairlines = [
+  { name: "Aeroméxico" },
+  { name: "Air Canada" },
+  { name: "Air Europa" },
+  { name: "Air France" },
+  { name: "Amaszonas Uruguay" },
+  { name: "American Airlines" },
+  { name: "Azul Linhas Aéreas" },
+  { name: "Avianca" },
+  { name: "Boliviana de Aviación" },
+  { name: "British Airways" },
+  { name: "Copa Airlines" },
+  { name: "Cubana" },
+  { name: "Delta Airlines" },
+  { name: "Ethiopian Airlines" },
+  { name: "Gol" },
+  { name: "Iberia" },
+  { name: "KLM" },
+  { name: "Level" },
+  { name: "Lufthansa" },
+  { name: "Paranair" },
+  { name: "Qatar" },
+  { name: "Sky Airline" },
+  { name: "Turkish Airlines" },
+  { name: "United Airlines" },
+  { name: "Other" },
+];
+
+export const nationalAirlines = [
+  { name: "Aerolíneas Argentinas" },
+  { name: "Lade" },
+  { name: "Flybondi" },
+  { name: "Jet Smart" },
+  { name: "Other" },
+];
+
+export const airports = [
+  { name: "Aeropuerto Internacional Ezeiza" },
+  { name: "Aeroparque Internacional Jorge Newbery" },
+];

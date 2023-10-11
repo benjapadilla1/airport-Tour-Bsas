@@ -7,7 +7,7 @@ import NavBar from "./components/NavBar/NavBar";
 
 export default function Router() {
   return (
-    <>
+    <div className="bg-gray-100 h-screen">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -15,6 +15,6 @@ export default function Router() {
         <Route path="/booking" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </>
+    </div>
   );
 }

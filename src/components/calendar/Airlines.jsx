@@ -3,7 +3,6 @@ import { internationalairlines, nationalAirlines } from "../../utils/data";
 
 function Airlines({ airline, setAirline }) {
   const [isInternational, setIsInternational] = useState(false);
-  // const [airline, setAirline] = useState("");
 
   const handleInputChange = (e) => {
     setAirline(e.target.value);
@@ -16,7 +15,7 @@ function Airlines({ airline, setAirline }) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex gap-2 align-middle">
-        <label htmlFor="internationalCheckbox">
+        <label htmlFor="internationalCheckbox" className="text-2xl">
           Mark the following checkbox if your flight is international
         </label>
         <input

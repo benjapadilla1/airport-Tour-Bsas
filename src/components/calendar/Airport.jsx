@@ -5,6 +5,7 @@ const Airport = ({ setAirport }) => {
     <select
       name="airport"
       defaultValue=""
+      className="w-full"
       onChange={(e) => setAirport(e.target.value)}
     >
       <option value="" disabled hidden>

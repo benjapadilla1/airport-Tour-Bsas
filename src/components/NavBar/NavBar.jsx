@@ -1,21 +1,23 @@
 import { Link } from "react-router-dom";
+import LanguageSwitch from "./LanguageSwitch";
 
 const NavBar = () => {
   return (
-    <div className="mt-5">
-      <ul className="flex flex-row justify-around ">
+    <div className="bg-gray-100">
+      <ul className="flex flex-row justify-evenly">
         <Link to={"/"}>
-          <li>Home</li>
+          <li className="text-3xl">Home</li>
         </Link>
         <Link to={"/tours"}>
-          <li>Tours</li>
+          <li className="text-3xl">Tours</li>
         </Link>
         <Link to={"/booking"}>
-          <li>Booking</li>
+          <li className="text-3xl">Booking</li>
         </Link>
         <Link to={"/contact"}>
-          <li>Contact</li>
+          <li className="text-3xl">Contact</li>
         </Link>
+        <LanguageSwitch />
       </ul>
     </div>
   );

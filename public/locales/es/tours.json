@@ -1,0 +1,31 @@
+{
+  "tours": "Tours Disponibles",
+  "0": {
+    "title": "City Tour",
+    "description": "Consta de un mínimo de 4 horas, salida del hotel y regreso al mismo, consiste en un recorrido por los lugares más emblemáticos de la Ciudad de Buenos Aires tales como: Obelisco - Teatro Colón - Paseo de las Historietas - Facultad de Ingeniería - Caminito en el Barrio de La Boca - Cancha de Boca - Bombonera - Puente de la Mujer - Buque Museo Fragata Sarmiento de Puerto Madero - Museo Puerto Madero - Casa Rosada - Plaza de Mayo - Catedral Metropolitana - El Cabildo - Palacio Barolo - Café Tortoni - El Congreso de la Nación Argentina - Confitería del Molino - Museo del Agua y de la Historia Sanitaria Argentina - El Ateneo Grand Splendid librería - Cementerio de la Recoleta - Iglesia Basílica de Nuestra Señora del Pilar en Recoleta - Recoleta Urban Mall - Plaza Francia - Facultad de Derecho - Flor genérica Floralis - Parque Japonés - Planetario - Bosques de Palermo - El Rosedal - Cancha de River Plate. Estos lugares deben disfrutarse con la libertad de bajar, tomar fotos y recorrer para conocer lo hermoso de Buenos Aires. Para completar el recorrido se pueden adicionar más horas o, si lo desea, pedir un nuevo tour y seguir disfrutando del recorrido. Gracias por elegirnos."
+  },
+  "1": {
+    "title": "Delta del Tigre",
+    "description": "Un maravilloso paseo donde reina la naturaleza y reina el descanso - mercado de frutos y opciones diferentes de paseo por las Islas en catamaranes, imperdible - Museo del Arte Tigre - Parque de la Costa - Casino Trilenium Ciudad de Tigre. Mínimo 4 horas desde el hotel y regreso al mismo. Distancia 60 km."
+  },
+  "2": {
+    "title": "Mundo Marino",
+    "description": "En San Clemente del Tuyú, a 400 km de la Ciudad de Buenos Aires - tickets en línea para entradas. Con espera y regreso al hotel."
+  },
+  "3": {
+    "title": "Temaiken Zoológico Temático",
+    "description": "Ubicado a 70 km de la Capital Federal - tickets en línea para entradas. Con espera y regreso al hotel."
+  },
+  "4": {
+    "title": "República de los Niños",
+    "description": "Ubicado en La Plata, a 70 km de Buenos Aires - traslado, espera y regreso al hotel."
+  },
+  "5": {
+    "title": "Visita a la Basílica de Luján",
+    "description": "Ubicada a 70 km de Buenos Aires. Con espera y regreso al hotel."
+  },
+  "6": {
+    "title": "Shows en Vivo Exclusivos",
+    "description": "Cena Show en Señor Tango - Tango porteño y otros. Consultar donde se vive el Verdadero Espectáculo de la Noche Porteña. Reserva y traslado desde el hotel y regreso."
+  }
+}

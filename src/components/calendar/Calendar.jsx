@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
-import { AiOutlineArrowLeft, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineWhatsApp } from "react-icons/ai";
 import Airlines from "./airlines";
 import Airport from "./Airport";
 import Time from "./Time";
@@ -54,17 +54,18 @@ const Booking = () => {
     airport,
     airline,
     name,
-    passangers,
+    flightNumber,
+    // passangers,
     destination,
   ];
 
-  const validateStates = (fileds) => {
-    for (const state of fileds) {
+  const validateStates = (fields) => {
+    for (const state of fields) {
       if (state === null || state === undefined || state === "") {
         return false;
       }
-      return true;
     }
+    return true;
   };
   const allFiledsSelected = validateStates(allStates);
 
@@ -82,57 +83,89 @@ const Booking = () => {
     }
   };
   return (
-    <>
-      <h2 className="text-center text-3xl mt-16 mb-4">¿When is the flight?</h2>
-      <div className="flex items-center justify-center flex-col gap-6">
+    <div className="bg-gray-100 min-h-screen p-8">
+      <div className="flex justify-center">
         {selectedDate ? (
-          <>
-            <button onClick={() => setSelectedDate(null)}>
-              <p className="text-center flex align-middle flex-row  mt-5 text-2xl">
-                <AiOutlineArrowLeft size={30} />
-                Choose another date
-              </p>
-            </button>
-            <p className="text-2xl">
-              Date: {selectedDate.toLocaleDateString()}
-            </p>
-            <label htmlFor="">Tell us your name</label>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-            />
-            <label htmlFor="">Where is your destination</label>
-            <input
-              type="text"
-              value={destination}
-              onChange={(e) => setDestination(e.target.value)}
-            />
-            <Time
-              selectedTime={selectedTime}
-              handleTimeChange={handleTimeChange}
-            />
-            <Airlines airline={airline} setAirline={handleAirlines} />
-            <label>Flight number:</label>
-            <input
-              placeholder="Flight number"
-              onChange={(e) => handleFlightNumber(e)}
-              value={flightNumber}
-              type="text"
-            />
-            <Airport setAirport={handleAirport} />
-            <button onClick={handleSubmit}>
-              <p className="text-center flex align-middle flex-row text-2xl">
-                Book via Whatsapp
+          <div className="grid grid-cols-2 gap-6 place-content-center">
+            <div className="col-span-2 flex justify-center gap-4 text-2xl">
+              {selectedDate.toLocaleDateString()}
+
+              <button onClick={() => setSelectedDate(null)}>
+                <p className="text-2xl">Choose another date</p>
+              </button>
+            </div>
+
+            <div className="col-span-2">
+              <label htmlFor="name" className="text-2xl">
+                Tell us your name
+              </label>
+              <input
+                type="text"
+                id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                className="w-full border rounded mt-1 p-2"
+              />
+            </div>
+            <div className="col-span-2">
+              <label htmlFor="destination" className="text-2xl">
+                Where is your destination
+              </label>
+              <input
+                type="text"
+                id="destination"
+                value={destination}
+                placeholder="Tell us the street you want to go"
+                onChange={(e) => setDestination(e.target.value)}
+                className="w-full border rounded mt-1 p-2"
+              />
+            </div>
+            <div className="col-span-2">
+              <Time
+                selectedTime={selectedTime}
+                handleTimeChange={handleTimeChange}
+              />
+            </div>
+            <div className="col-span-2">
+              <Airlines airline={airline} setAirline={handleAirlines} />
+            </div>
+            <div className="col-span-2">
+              <label htmlFor="flightNumber" className="text-2xl">
+                Flight number:
+              </label>
+              <input
+                type="text"
+                id="flightNumber"
+                placeholder="Flight number"
+                onChange={(e) => handleFlightNumber(e)}
+                value={flightNumber}
+                className="border ml-4 rounded p-2"
+              />
+            </div>
+            <div className="col-span-2">
+              <Airport setAirport={handleAirport} />
+            </div>
+            <div className="col-span-2 grid place-content-center grid-cols-2 grid-flow-row  ">
+              <button onClick={handleSubmit} className="text-2xl">
+                <p>Book</p>
                 <AiOutlineWhatsApp size={30} color="green" />
-              </p>
-            </button>
-          </>
+              </button>
+            </div>
+          </div>
         ) : (
-          <Calendar locale="en" onChange={handleChange} value={selectedDate} />
+          <div className="col-span-2">
+            <h2 className="text-center text-3xl mt-4 mb-4">
+              ¿When is your flight?
+            </h2>
+            <Calendar
+              locale="en"
+              onChange={handleChange}
+              value={selectedDate}
+            />
+          </div>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

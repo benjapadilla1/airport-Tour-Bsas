@@ -1,0 +1,31 @@
+{
+  "tours": "Tours available",
+  "0": {
+    "title": "City Tour",
+    "description": "Consists of a minimum of 4 hours, departure from the hotel and return to the same, it includes a tour of the most emblematic places in the City of Buenos Aires such as: Obelisco - Teatro Colón - Paseo de las Historietas - Faculty of Engineering - Caminito in the neighborhood of La Boca - Boca Stadium - Bombonera - Puente de la Mujer - Frigate Sarmiento Museum in Puerto Madero - Puerto Madero Museum - Casa Rosada - Plaza de Mayo - Metropolitan Cathedral - El Cabildo - Barolo Palace - Café Tortoni - The Congress of the Argentine Nation - Confitería del Molino - Museum of Water and Sanitary History of Argentina - El Ateneo Grand Splendid bookstore - Recoleta Cemetery - Basilica of Our Lady of the Pillar in Recoleta - Recoleta Urban Mall - Plaza Francia - Faculty of Law - Generic Floralis Flower - Japanese Garden - Planetarium - Palermo Woods - The Rosedal - River Plate Stadium. These places should be enjoyed with the freedom to get off, take photos, and explore to discover the beauty of Buenos Aires. To complete the tour, you can add more hours or, if you wish, request a new tour and continue enjoying the journey. Thank you for choosing us."
+  },
+  "1": {
+    "title": "Tigre Delta",
+    "description": "A wonderful journey where nature reigns and rest prevails - fruit market and different options for boat trips to the islands on catamarans, a must-see - Tigre Art Museum - Parque de la Costa - Trilenium Casino in the City of Tigre. Minimum 4 hours from the hotel and return to the same. Distance 60 km."
+  },
+  "2": {
+    "title": "Mundo Marino",
+    "description": "In San Clemente del Tuyú, 400 km from the City of Buenos Aires - online tickets for entry. With waiting time and return to the hotel."
+  },
+  "3": {
+    "title": "Temaiken Theme Zoo",
+    "description": "Located 70 km from the Federal Capital - online tickets for entry. With waiting time and return to the hotel."
+  },
+  "4": {
+    "title": "Republic of the Children",
+    "description": "Located in La Plata, 70 km from Buenos Aires - transfer, waiting, and return to the hotel."
+  },
+  "5": {
+    "title": "Visit to the Basilica of Luján",
+    "description": "Located 70 km from Buenos Aires. With waiting time and return to the hotel."
+  },
+  "6": {
+    "title": "Exclusive Live Shows",
+    "description": "Dinner Show at Señor Tango - Porteño Tango and others. Please inquire for an authentic Buenos Aires night spectacle. Reservation and transfer from the hotel and return."
+  }
+}

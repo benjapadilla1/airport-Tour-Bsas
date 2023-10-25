@@ -3,8 +3,8 @@ import LanguageSwitch from "./LanguageSwitch";
 
 const NavBar = () => {
   return (
-    <div className="bg-gray-100">
-      <ul className="flex flex-row justify-evenly">
+    <div className="">
+      <ul className="ulNavbar">
         <Link to={"/"}>
           <li className="text-3xl">Home</li>
         </Link>
@@ -14,10 +14,7 @@ const NavBar = () => {
         <Link to={"/booking"}>
           <li className="text-3xl">Booking</li>
         </Link>
-        <Link to={"/contact"}>
-          <li className="text-3xl">Contact</li>
-        </Link>
-        <LanguageSwitch />
+        <LanguageSwitch/>
       </ul>
     </div>
   );

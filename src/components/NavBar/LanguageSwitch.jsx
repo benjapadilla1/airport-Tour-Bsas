@@ -6,19 +6,19 @@ const LanguageSwitch = () => {
     i18next.changeLanguage(language);
   };
   return (
-    <div className="flex gap-5 relative top-5">
+    <div className="botonesLenguaje">
       <button onClick={() => ChangeLanguage("en")}>
         <img
           src={England}
           alt="England"
-          className="w-14 h-14 rounded-lg object-fill "
+          className="banderas w-10 h-10 rounded-lg object-fill "
         />
       </button>
       <button onClick={() => ChangeLanguage("es")}>
         <img
           src={Arg}
           alt="Arg"
-          className="w-14 h-14 rounded-lg object-fill "
+          className="banderas w-10 h-10 rounded-lg object-fill "
         />
       </button>
     </div>

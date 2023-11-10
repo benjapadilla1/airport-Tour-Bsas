@@ -28,6 +28,12 @@
 
 .ImagenContenedor{
   text-align: center;
+  background-image: url("https://static.eldiario.es/clip/adec5662-9d7a-49c5-8a06-8c87a5155f86_16-9-discover-aspect-ratio_default_0.jpg");
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat:no-repeat ;
 }
 .imagenInicio{
   display: block;
@@ -36,6 +42,9 @@
 }
 .parrafoPrincipal{
   text-align: center;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: beige;
 }
 
 

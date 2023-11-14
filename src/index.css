@@ -15,43 +15,20 @@
   color: white;
   padding: 8px 0 8px 0;
 }
-.botonesLenguaje{
+.botonesLenguaje {
   display: flex;
-  justify-content: center; 
-}
-.banderas{
- border-radius: 50%; 
- margin: 0.5rem;
-}
-
-/* Home */
-
-.ImagenContenedor{
-  text-align: center;
-  background-image: url("https://static.eldiario.es/clip/adec5662-9d7a-49c5-8a06-8c87a5155f86_16-9-discover-aspect-ratio_default_0.jpg");
-  height: 100vh;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  background-repeat:no-repeat ;
 }
-.imagenInicio{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.parrafoPrincipal{
-  text-align: center;
-  font-size: 2rem;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: beige;
+.banderas {
+ border-radius: 50%;
+ margin: 0.5rem;
 }
 
 
 
 /*Footer*/
 
-.footerContainer{
+.footerContainer {
   background-color: rgb(39, 39, 39);
   color: white;
   padding: 1.9rem 0 1.9rem 0;

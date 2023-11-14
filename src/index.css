@@ -7,6 +7,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5px;
+}
+
 /* NavBar*/
 .ulNavbar {
   display: flex;
@@ -15,13 +24,15 @@
   color: white;
   padding: 8px 0 8px 0;
 }
+
 .botonesLenguaje {
   display: flex;
   justify-content: center;
 }
+
 .banderas {
- border-radius: 50%;
- margin: 0.5rem;
+  border-radius: 50%;
+  margin: 0.5rem;
 }
 
 

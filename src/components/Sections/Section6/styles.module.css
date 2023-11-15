@@ -1,0 +1,7 @@
+.contenedor{
+    display: flex;
+    
+    align-items: center;
+    padding: 10%;
+    justify-content: space-evenly;
+}

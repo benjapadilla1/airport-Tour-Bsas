@@ -1,0 +1,12 @@
+.contenedor{
+    margin: 20px 0px 20px 0px;
+}
+p{
+    text-align: center;
+}
+.botones {
+  display: flex;
+  margin-top: 15px;
+  align-items: end;
+  justify-content: center;
+}

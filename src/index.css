@@ -34,18 +34,24 @@
   margin: 0.5rem;
 }
 
-
-
 /*Footer*/
 
 .footerContainer {
-  background-color: rgb(39, 39, 39);
-  color: white;
-  padding: 1.9rem 0 1.9rem 0;
+  color: black;
+  padding: 1.9rem;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 7%;
 }
-.derechosReservados{
+.derechosReservados {
   background-color: rgb(39, 39, 39);
   color: white;
+  margin: 10px 0 0 0;
+}
+.cosasFooter {
+  display: flex;
+}
+.cosasFooter p {
+  margin: 0 10px 0 10px;
 }

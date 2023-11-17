@@ -1,7 +1,15 @@
-.contenedor{
-    display: flex;
-    
-    align-items: center;
-    padding: 10%;
-    justify-content: space-evenly;
+.contenedor {
+  display: flex;
+  align-items: start;
+  padding: 10%;
+  justify-content: space-evenly;
+}
+.botones {
+  display: flex;
+  margin-top: 15px;
+  align-items: end;
+  justify-content: center;
+}
+h2{
+    text-align: center;
 }

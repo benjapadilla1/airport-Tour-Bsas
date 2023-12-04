@@ -15,14 +15,11 @@
   padding: 5px;
 }
 
-/* NavBar*/
-.ulNavbar {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: black;
-  color: white;
-  padding: 8px 0 8px 0;
+.navBarContainer {
+  border-bottom: 1px solid black;
+  border-radius: 6px;
 }
+
 
 .botonesLenguaje {
   display: flex;
@@ -30,8 +27,7 @@
 }
 
 .banderas {
-  border-radius: 50%;
-  margin: 0.5rem;
+  border-radius: 12px;
 }
 
 /*Footer*/

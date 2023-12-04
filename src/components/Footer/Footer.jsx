@@ -1,5 +1,4 @@
 import React from "react";
-import { AiFillMail, AiOutlineWhatsApp } from "react-icons/ai";
 import logo from "../image/logo.jpg";
 const handleSubmit = () => {
   const message = "Hola buenos dias! ";
@@ -38,7 +37,7 @@ function Footer() {
       <hr className="font-bold"/>
       <div className="text-center derechosReservados">
         <p className="text-2xl">© {new Date().getFullYear()}</p>
-        <p>Copyright 2023 | tuhermana | All rights reserved</p>
+        <p>Copyright 2023 | BsAs Tours | All rights reserved</p>
       </div>
     </>
   );

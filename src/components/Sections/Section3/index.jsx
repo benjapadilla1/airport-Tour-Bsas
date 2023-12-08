@@ -19,7 +19,7 @@ const Index = () => {
 };
 
 const TourCard = ({ icon, title, description }) => (
-  <div className="p-4 mb-8 rounded-md flex flex-col items-center">
+  <div className="p-4 mb-8 rounded-md flex flex-col items-center justify-center text-center">
     {icon}
     <h2 className="text-xl font-bold mt-2 mb-2">{title}</h2>
     <p>{description}</p>

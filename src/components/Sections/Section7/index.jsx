@@ -1,7 +1,8 @@
 import React from "react";
-import styles from "./styles.module.css";
-import Button from "../../../components/Button/Button";
 import { AiOutlineWhatsApp } from "react-icons/ai";
+import Button from "../../../components/Button/Button";
+import styles from "./styles.module.css";
+
 function index() {
   return (
     <>

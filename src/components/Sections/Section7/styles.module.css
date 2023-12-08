@@ -1,12 +1,19 @@
-.contenedor{
-    margin: 20px 0px 20px 0px;
+.contenedor {
+  margin: 20px 0;
+  text-align: center;
 }
-p{
-    text-align: center;
+p {
+  text-align: center;
 }
+
 .botones {
   display: flex;
   margin-top: 15px;
-  align-items: end;
   justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .contenedor {
+    padding: 0 20px;
+  }
 }

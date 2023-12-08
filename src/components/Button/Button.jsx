@@ -1,3 +1,12 @@
+const handleSubmit = () => {
+  const message = "Hola buenos dias! ";
+
+  const WhatsappUrl = `https://api.whatsapp.com/send?phone=${import.meta.env.VITE_PHONE_NUMBER
+    }&text=${encodeURIComponent(message)}`;
+
+  window.open(WhatsappUrl, "_blank");
+};
+
 
 const Button = ({ onClick, children, tailwindClassName, backgroundColor, textColor, iconLeft, iconRight }) => {
 

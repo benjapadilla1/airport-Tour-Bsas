@@ -1,3 +1,4 @@
+import Footer from "./components/Footer/Footer";
 import NavBar from "./components/NavBar/NavBar";
 import Section1 from "./components/Sections/Section1";
 import Section2 from "./components/Sections/Section2";
@@ -17,7 +18,7 @@ export default function Router() {
       <Section4 id="section4"  />
       <Section6 id="section6" />
       <Section7 id="section7" />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 }

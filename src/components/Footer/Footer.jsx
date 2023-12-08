@@ -1,41 +1,30 @@
 import React from "react";
-import logo from "../image/logo.jpg";
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
-
-const handleSubmit = () => {
-  const message = "Hola buenos dias! ";
-
-  const WhatsappUrl = `https://api.whatsapp.com/send?phone=${
-    import.meta.env.VITE_PHONE_NUMBER
-  }&text=${encodeURIComponent(message)}`;
-
-  window.open(WhatsappUrl, "_blank");
-};
+import logo from "../image/logo.jpg";
 
 function Footer() {
   return (
     <>
-        <hr/>
-      <div className="footerContainer">
-        <div>
-          <img src={logo} alt="" style={{ width: 100 }} />
+      <div className="border-t border-black rounded-md mt-10" />
+      <div className="flex flex-wrap justify-between items-center p-4 md:p-8">
+        <div className="">
+          <img src={logo} alt="" className="w-24 md:w-32" />
         </div>
-        <div className="cosasFooter">
-          <p>Service</p>
-          <p>Tours</p>
-          <p>Contact</p>
-          <p>Blog</p>
+        <div className="flex flex-wrap">
+          <p className="mr-4 mb-2 md:mb-0">Service</p>
+          <p className="mr-4 mb-2 md:mb-0">Tours</p>
+          <p className="mr-4 mb-2 md:mb-0">Contact</p>
+          <p className="mb-2 md:mb-0">Blog</p>
         </div>
-        <div className="flex flex-row gap-2">
+        <div className="flex gap-8 lg:justify-normal justify-center">
           <FaInstagram size={30} />
           <FaFacebookSquare size={30} />
           <IoLogoWhatsapp size={30} />
         </div>
       </div>
-      <div className="text-center derechosReservados">
-        <p className="text-2xl">© {new Date().getFullYear()}</p>
+      <div className="text-center bg-black text-white p-4">
+        <p className="text-2xl mb-4">© {new Date().getFullYear()}</p>
         <p>Copyright 2023 | BsAs Tours | All rights reserved</p>
       </div>
     </>

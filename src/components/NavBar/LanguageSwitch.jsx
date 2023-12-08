@@ -1,27 +1,23 @@
 import i18next from "i18next";
-import Arg from "/assets/arg.webp";
-import England from "/assets/england.png";
+import { useState } from "react";
+
 const LanguageSwitch = () => {
-  const ChangeLanguage = (language) => {
-    i18next.changeLanguage(language);
+  const [language, setLanguage] = useState("en");
+
+  const toggleLanguage = () => {
+    const newLanguage = language === "en" ? "es" : "en";
+    i18next.changeLanguage(newLanguage);
+    setLanguage(newLanguage);
   };
+
+  const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
+
   return (
-    <div className="botonesLenguaje">
-      <button onClick={() => ChangeLanguage("en")}>
-        <img
-          src={England}
-          alt="England"
-          className="banderas w-10 h-10 object-fill "
-        />
-      </button>
-      <button onClick={() => ChangeLanguage("es")}>
-        <img
-          src={Arg}
-          alt="Arg"
-          className="banderas w-10 h-10 object-fill "
-        />
-      </button>
-    </div>
+    <button onClick={toggleLanguage} className="px-4 py-2 border border-solid border-gray-500 rounded-md">
+      {capitalizeFirstLetter(language)}
+    </button>
   );
 };
 

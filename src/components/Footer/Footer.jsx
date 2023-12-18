@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebookSquare, FaInstagram } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io5";
 import logo from "../image/logo.jpg";
@@ -12,10 +11,10 @@ function Footer() {
           <img src={logo} alt="" className="w-24 md:w-32" />
         </div>
         <div className="flex flex-wrap">
-          <p className="mr-4 mb-2 md:mb-0">Service</p>
-          <p className="mr-4 mb-2 md:mb-0">Tours</p>
-          <p className="mr-4 mb-2 md:mb-0">Contact</p>
-          <p className="mb-2 md:mb-0">Blog</p>
+          <a href="#section1" className="mr-4 mb-2 md:mb-0">Explore</a>
+          <a href="#about" className="mr-4 mb-2 md:mb-0">Tours</a>
+          <a href="#section2" className="mr-4 mb-2 md:mb-0">Contact</a>
+          <a href="#section3" className="mb-2 md:mb-0">Blog</a>
         </div>
         <div className="flex gap-8 lg:justify-normal justify-center">
           <FaInstagram size={30} />

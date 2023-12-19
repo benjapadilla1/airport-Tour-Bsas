@@ -57,7 +57,7 @@ const Index = ({ id }) => {
           onRequestClose={closeModal}
           contentLabel="Travel Reservation"
           className="bg-white p-8 rounded-lg shadow-md absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
-          overlayClassName="bg-black opacity-50 fixed inset-0"
+          overlayClassName="bg-black fixed inset-0"
         >
           <h2 className="text-2xl font-bold mb-4">Travel Reservation</h2>
 

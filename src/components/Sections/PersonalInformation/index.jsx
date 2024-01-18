@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import ReactModal from "react-modal";
 import me from "../../image/me.jpg";
 
@@ -18,12 +18,15 @@ const Index = ({ id }) => {
   };
 
   const handleBook = () => {
-    console.log("Booking details:", {
-      passengerCount,
-      luggageCount,
-      origin,
-      destination,
-    });
+    const message = `Hola Buenos Días, me gustaría reservar un traslado. Los detalles son los siguientes: \n\nOrigen: ${origin}\nDestino: ${destination}\nPasajeros: ${passengerCount}\nEquipaje: ${luggageCount}`;
+
+    const WhatsappUrl = `https://api.whatsapp.com/send?phone=${import.meta.env.VITE_PHONE_NUMBER}&text=${encodeURIComponent(message)}`;
+    window.open(WhatsappUrl, "_blank");
+
+    setPassengerCount(1)
+    setDestination("")
+    setOrigin("")
+    setLuggageCount(1)
     closeModal();
   };
 

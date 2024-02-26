@@ -50,8 +50,12 @@ const Index = ({ id }) => {
       </div>
 
       <div className="lg:w-2/3 lg:m-auto lg:text-center">
-        <p>
-          <button onClick={openModal} className="text-blue-500 underline cursor-pointer">
+        <p className="">
+        With professional drivers and modern vehicles, we stand out for exceptional customer service and transparent rates. Whether you need a taxi to explore Buenos Aires iconic landmarks or a hassle-free airport transfer, we are here to make every trip an enjoyable experience.
+          <p>
+          Enjoy the convenience of booking your ride with our easy-to-use app or simply raise your hand to board one of our recognizable yellow taxis. We are committed to providing reliable transportation that suits your needs and makes you feel safe every journey.
+          </p>
+          <button onClick={openModal} className="bg-green-500 rounded-md text-black cursor-pointer p-5 mt-5">
             Book to wait for them or travel, even with luggage, etc.
           </button>
         </p>
@@ -125,7 +129,7 @@ const Index = ({ id }) => {
               Book Now
             </button>
 
-            <button onClick={closeModal} className="bg-red-600 px-4 py-2 rounded-md text-blue-500">
+            <button onClick={closeModal} className="bg-red-600 px-4 py-2 rounded-md text-white">
               Cancel
             </button>
           </div>
